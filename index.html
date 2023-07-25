@@ -4,9 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/0cd0a45665.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google lato font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+
     <title>Document</title>
   </head>
-  <body>
-    <p class="bg-orange-500 p-12">Lorem ipsum dolor sit amet.</p>
+  <body class="font-lato">
+    <header class="mx-auto w-[90%]">
+      <!--todo: This is header navber section -->
+      <nav
+        class="my-5 flex h-16 items-center justify-around gap-20 rounded-full bg-[#F85559] lg:justify-around lg:gap-24"
+      >
+        <div class="hidden lg:block">
+          <ul class="flex text-base text-white">
+            <li class="mr-5"><a href="#">Home</a></li>
+            <li class="mr-5"><a href="#">About Us</a></li>
+            <li class="mr-5"><a href="#">Shop</a></li>
+            <li class="mr-5"><a href="#">All Fruit</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="./images/logo.png" alt="" class="w-8 lg:w-10" />
+          <h3 class="text-base font-bold text-white lg:text-3xl">
+            Fruit Burst
+          </h3>
+        </div>
+        <div class="flex hidden items-center lg:block">
+          <input
+            type="text"
+            placeholder="Search here"
+            class="input h-[40px] w-[300px] rounded-full"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass relative right-8 text-[#121212]"
+          ></i>
+        </div>
+
+        <div class="drawer-end lg:hidden">
+          <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content">
+            <!-- Page content here -->
+            <label for="my-drawer-4" class="drawer-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-5 w-5 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path></svg
+            ></label>
+          </div>
+          <div class="drawer-side">
+            <label for="my-drawer-4" class="drawer-overlay"></label>
+            <ul class="menu h-full w-80 bg-base-200 p-4 text-base-content">
+              <!-- Sidebar content here -->
+              <li class="mr-5"><a href="#">Home</a></li>
+              <li class="mr-5"><a href="#">About Us</a></li>
+              <li class="mr-5"><a href="#">Shop</a></li>
+              <li class="mr-5"><a href="#">All Fruit</a></li>
+              <li class="mr-5">
+                <div class="flex items-center lg:block lg:hidden">
+                  <input
+                    type="text"
+                    placeholder="Search here"
+                    class="input h-[40px] rounded-full"
+                  />
+                  <i
+                    class="fa-solid fa-magnifying-glass relative right-8 text-[#121212]"
+                  ></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--  -->
+      </nav>
+      <section></section>
+    </header>
+    <main class="mx-auto w-[90%]"></main>
+    <footer></footer>
   </body>
 </html>
